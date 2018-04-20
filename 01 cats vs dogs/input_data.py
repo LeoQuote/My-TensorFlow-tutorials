@@ -40,7 +40,7 @@ import os
 #%%
 
 # you need to change this to your data directory
-train_dir = '/home/kevin/tensorflow/cats_vs_dogs/data/train/'
+train_dir = '/home/qizhicheng/.kaggle/competitions/dogs-vs-cats-redux-kernels-edition/train/'
 
 def get_files(file_dir):
     '''

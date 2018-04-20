@@ -39,7 +39,7 @@ IMG_W = 208  # resize the image, if the input image is too large, training will 
 IMG_H = 208
 BATCH_SIZE = 16
 CAPACITY = 2000
-MAX_STEP = 10000 # with current parameters, it is suggested to use MAX_STEP>10k
+MAX_STEP = 20000 # with current parameters, it is suggested to use MAX_STEP>10k
 learning_rate = 0.0001 # with current parameters, it is suggested to use learning rate<0.0001
 
 
@@ -47,8 +47,8 @@ learning_rate = 0.0001 # with current parameters, it is suggested to use learnin
 def run_training():
     
     # you need to change the directories to yours.
-    train_dir = '/home/kevin/tensorflow/cats_vs_dogs/data/train/'
-    logs_train_dir = '/home/kevin/tensorflow/cats_vs_dogs/logs/train/'
+    train_dir = '/home/qizhicheng/proj/My-TensorFlow-tutorials/01 cats vs dogs/data/train/'
+    logs_train_dir = '/home/qizhicheng/proj/My-TensorFlow-tutorials/01 cats vs dogs/logs/train/'
     
     train, train_label = input_data.get_files(train_dir)
     
@@ -95,7 +95,7 @@ def run_training():
     coord.join(threads)
     sess.close()
     
-
+run_training()
 #%% Evaluate one image
 # when training, comment the following codes.
 
